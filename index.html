@@ -2,19 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora de hidratacion</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div id="contenedor">
             <div id="calculadora">
                 <div class="contenido">
                     <h1>Hidratación Basal</h1>
-                    <input type="number" placeholder="Peso en kg" />
+                    <p>Completa todos los datos</p>
+                    <input id="peso" type="number" placeholder="Peso en kg" />
                     <p id="error">* Debe completar todos los datos</p>
-                    <button class="button">Calcular</button>
-                    <p class="resultado">71cc/h</p>
-                    <p class="resultado">m+m/2 : 105cc/h</p>
+                    <button class="button" id="calcular">Calcular</button>
+                    <p class="resultado" id="flu">71cc/h</p>
+                    <p class="resultado" id="man">m+m/2 : 105cc/h</p>
                 </div>
             </div>
             <div id="detalles">
